@@ -9,6 +9,10 @@
     <p>Description: {{ headband.description }}</p>
     <p>Price: ${{ headband.price }}</p>
   </div>
+  <div class="card-action">
+    <a href="{% url 'headbands_update' headband.id %}">Edit</a>
+    <a href="{% url 'headbands_delete' headband.id %}">Delete</a>
+  </div>
 </div>
 
 {% endblock %}
